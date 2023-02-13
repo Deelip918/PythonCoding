@@ -1,0 +1,26 @@
+1. https://www.hackerrank.com/challenges/python-loops/problem
+   solution:
+   if __name__ == '__main__':
+     n = int(input())
+     for i in range(0,n):
+         print(i**2)
+2.https://www.hackerrank.com/challenges/write-a-function/problem?isFullScreen=true		
+		
+def is_leap(year):
+    leap = True
+    if (year % 100 == 0) and (year % 400 == 0):
+        leap=True     
+    elif (year % 4 ==0) and (year % 100 != 0):
+        leap=True      
+    else:
+        leap=False      
+    return leap
+
+year = int(input())
+
+3. https://www.hackerrank.com/challenges/python-print/problem?isFullScreen=true
+
+if __name__ == '__main__':
+    n = int(input())
+    for i in range(1,n+1):
+        print(i,end="")
