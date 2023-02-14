@@ -1,0 +1,43 @@
+# In the loop, when the item value is "banana", jump directly to the next item.
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    continue
+print(x)
+
+# Exit the loop when x is "banana".
+
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+     break
+print(x)
+
+
+def my_function():
+    print("Hello from a function")
+my_function()
+
+# Inside a function with two parameters, print the first parameter.
+
+def my_function(fname, lname):
+    print(fname)
+my_function('Deelip','Kumar')
+
+def my_function(x):
+    print(x+5)
+my_function(5)
+## o/p=10
+# If you do not know the number of arguments that will be passed into your function, there is a prefix you can add in the function definition, which prefix?
+def my_function(*rank):
+    print("the number of arguments "+ rank[1])
+my_function('534','34','34')
+## o/p = the number of arguments 34
+
+
+#If you do not know the number of keyword arguments that will be passed into your function, there is a prefix you can add in the function definition, which prefix?
+
+def my_function(**kid):
+  print("His last name is " + kid["lname"])
+my_function(fname="deelip",lname="Kumar")
+o/p= Kumar
