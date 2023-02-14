@@ -1,0 +1,17 @@
+lst1=[10,23,30]
+print(id(lst1))
+lst2=lst1.copy()
+print(id(lst1))
+print(id(lst2))
+lst2[1]=20
+print(lst2)
+print(lst1)
+print(id(lst1))
+print(id(lst2))
+
+number1=20
+number2=20
+print(id(number1))
+print(id(number2))
+number3=10
+print(id(number3))
