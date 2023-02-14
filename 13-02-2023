@@ -1,0 +1,45 @@
+1.
+c=[]
+x = ['ab', 'cd']
+for i in x:
+   j=i.upper()
+   c.append(j)
+print(c)
+o/p=
+2.
+def example(a):
+    a = a+ '2'
+    a = a*2
+    return a
+print(example("hello"))
+3.
+def foo(x):
+    x = ['defabc']
+    return id(x)
+q = ['abc', 'def']
+print(id(q) == foo(q))
+o/p=False
+x=50
+def func():
+    global x
+ 
+    print('x is', x)
+    x = 2
+    print('Changed global x to', x)
+func()
+print('Value of x is', x)
+o/p =   x is 50
+	Changed global x to 2
+	Value of x is 2
+
+# Raise an exception in try and except
+1.
+x = -1
+if x < 0:
+  raise Exception("Sorry, no numbers below zero")
+o/p= Sorry, no numbers below zero  
+2. 
+x = "hello"
+if not type(x) is int:
+  raise TypeError("Only integers are allowed")
+o/p= Only integers are allowed
