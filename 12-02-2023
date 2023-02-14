@@ -1,0 +1,35 @@
+#The try block will execute
+name='Deelip'
+try:
+  print(name)
+except NameError:
+  print("Variable name is not defined")
+ o/p=Deelip
+  
+#The try block will generate a NameError, because x is not defined:
+try:
+  print(name)
+except NameError:
+  print("Variable name is not defined")
+o/p=Variable name is not defined
+
+#The try block does not raise any errors, so the else block is executed:
+
+try:
+  print("Hello")
+except:
+  print("Something went wrong")
+else:
+  print("Nothing went wrong")
+o/p = Hello
+      Nothing went wrong
+      
+#The finally block gets executed no matter if the try block raises any errors or not:
+try:
+  print(x)
+except:
+  print("Something went wrong")
+finally:
+  print("The 'try except' is finished")
+o/p= Something went wrong
+     The 'try except' is finished
