@@ -1,0 +1,75 @@
+""" fruits = ["apple", "banana"]
+if "apple" in fruits:
+  print("Yes, apple is a fruit!")
+else:
+    print("no")
+    
+if 5 == 10 and 4 == 4:
+    print("At least one of the statements is true")
+else:
+    print("z")
+    
+fruits = ["apple", "banana", "cherry"]
+fruits[0]="kiwi"
+print(fruits)
+
+fruits = ["apple", "banana", "cherry"]
+fruits.insert(1,"lemon")
+print(fruits)
+
+fruits.remove("banana")
+print(fruits)
+
+fruits = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(fruits[2:5])
+print(fruits)
+#appending a list in 
+fruits = {"apple", "banana", "cherry"}
+more_fruits = ["orange", "mango", "grapes"]
+fruits.update(more_fruits)
+print(fruits)
+
+fruits.discard("banana")
+print(fruits)
+
+# if and else condition
+
+a=40
+b=50
+i=0
+if a != b:
+    print("Hello World")
+# one line if condition
+print("Yes") if b<a else print("no")
+#while loop
+a=20
+b=30
+i=0
+while a<b:
+    i=i+1
+    print(i)
+    a=a+1
+text=("b is {} greater than a")
+print(text.format(i))
+#Break condition
+i = 0
+while i < 6:
+  if i == 3:
+    break
+  i += 1
+  print(i)
+#continue statement
+i = 0
+while i < 6:
+    i += 1
+    if i == 3:
+        continue
+    print(i)
+    
+# Type of a data type
+def myfun(y):
+    global x
+    x=y
+    print(x[0:2:2])
+    return x
+print(type(myfun('50')))
