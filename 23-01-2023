@@ -1,0 +1,25 @@
+1.https://practice.geeksforgeeks.org/problems/missing-number-in-array1416/1?page=1&sortBy=submissions
+class Solution:
+    def MissingNumber(self,arr,n):
+        total = (n + 1)*(n)//2
+        sum_of_Aarray = sum(arr)
+        return total - sum_of_A
+	
+2. function to return addition, subtraction of two given nombers
+def calculation(a, b):
+    add = a + b
+    sub = a - b
+    return add, sub
+res = calculation(40, 10)
+output= 50,30
+
+3. function with default aurgument
+def show_employee(name, salary=9000):
+    print("Name:", name, "salary:", salary)
+
+show_employee("Ben", 12000)
+show_employee("Jessa")
+
+output
+Name: Ben salary: 12000
+Name: Jessa salary: 9000
