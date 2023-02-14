@@ -1,0 +1,18 @@
+1. oops
+class Employee_1:  
+    def __init__(self, name, age,ID):  
+        self.name = name  
+        self.age = age  
+        self.ID = ID  
+Emp = Employee_1("dk", 20, 'AAINrs')  
+print(Emp.name)  
+print(Emp.age)  
+print(Emp.ID)  
+2. oops Question 2
+class Vehicle:
+    def __init__(self, name, mileage, capacity):
+        self.name = name
+        self.mileage = mileage
+        self.capacity = capacity
+    print(School_bus.name , School_bus.mileage , School_bus.capacity)
+School_bus =Vehicle("School Volvo", 12, 50)
