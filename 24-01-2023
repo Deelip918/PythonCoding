@@ -1,0 +1,28 @@
+1. function for finding the largest number in a list
+def large_number(n):
+    large=n[0]
+    for i in  n:
+        if large<i:
+            large=i
+    return large
+l=[1,2,3,4,5,55,33,99,5]
+print("largest number",large_number(l))
+
+2. recursive function to add up to the given number
+def recursive_fun(x):
+    addition = 0
+    for i in range(1, x+1):
+        addition = addition + i
+    
+    return addition
+result = recursive_fun(10)
+print(result)
+
+3. function for creating list of even number in given range
+def even(n):
+    evennumber=[]
+    for i in range(4,n+1):
+        if i%2==0:
+            evennumber.append(i)
+    print(evennumber)
+even(30)
