@@ -1,0 +1,44 @@
+1. polymorphism
+class cricket():
+    def venue(self):
+        print("Eden Gardens, Kolkata")
+    def series(self):
+        print("Champions Trophy")
+    def chears(self):
+        print("All the cricketer is in the field")
+        
+class Football():
+    def venue(self):
+        print("JWLN Stadium, Goa")
+    def series(self):
+        print("Indian Super League")
+    def chears(self):
+        print("All the footbowler is in the field")
+
+cricmatch = cricket()
+footballmatch = Football()
+for game in (cricmatch, footballmatch):
+    game.venue()
+    game.series()
+    game.chears()
+    
+2. cunstructor in class
+class Addition:
+    number1  = 0
+    number2 = 0
+    result = 0
+    def __init__(self, f, s):
+        self.number1 = f
+        self.number2 = s
+ 
+    def display(self):
+        print("number 1 = " + str(self.number1))
+        print("number 2 = " + str(self.number2))
+        print("Addition of two numbers = " + str(self.result))
+    def calculate(self):
+        self.result = self.number1 + self.number2
+obj1 = Addition(300, 200) 
+ 
+obj1.calculate() 
+ 
+obj1.display()
